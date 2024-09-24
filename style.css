@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'work sans',sans-serif;
+}
+body{
+    height: 1090px;
+    width: 100%;
+    background-color: rgb(211, 209, 209);
+}
+section{
+    padding: 50px 10% 60px;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 40px;
+    background-color: rgb(226, 220, 220);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.footer-content h3{
+    color: rgb(65, 63, 63);
+    margin-bottom: 24px;
+    font-size: 20px;
+
+}
+.footer-content li{
+    margin-bottom: 16px;
+}
+.footer-content li a{
+    display: block;
+    color: rgb(85, 80, 80);
+    font-size: 15px;
+    font-weight: 400;
+    transition: all .40s ease;
+}
+.footer-content li a:hover{
+    transform: translateY(-3px) translateX(-5px);
+    color: black;
+}
+.footer-content p{
+    color: rgb(85, 80, 80);
+    font-size: 15px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+.icons a{
+display: inline-block;
+font-size: 22px;
+color: rgb(85, 80, 80);
+margin-right: 17px;
+transition: all .40s ease;
+}
+.icons a:hover{
+    color: black;
+    transform: translateY(-5px);
+}
+.newsletter h3 {
+    color: rgb(65, 63, 63);
+    margin-bottom: 24px;
+    font-size: 20px;
+}
+.newsletter p{
+    color: rgb(85, 80, 80);
+    font-size: 15px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+.newsletter.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
+}
+.newsletter .form input{
+    background-color: white;
+    border: 0;
+    outline: none;
+    padding: 14px 20px;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form button{
+    padding: 14px 20px;
+    border: 0;
+    border-radius: 6px;
+    background-color: rgb(85, 80, 80);
+    color: white;
+}
+@media(max-width:1690px){
+    section{
+        padding: 50px 5% 40px;
+    }
+}
+@media(max-width:1120px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        gap: 16px;
+    }
+}
+@media(max-width :700px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        gap: 24px;
+    }
+}
